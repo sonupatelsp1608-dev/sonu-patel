@@ -23,7 +23,7 @@ class HelloAPI(MethodView):
         return jsonify({"message": "Hello Sonu"})
     
     def post(self):
-        return jsonify({"message": "Hello Sonu12345"})
+        return jsonify({"message": " Sonu12345"})
 
 # Route bind karna
 app.add_url_rule('/hello', view_func=HelloAPI.as_view('hello_api'))
